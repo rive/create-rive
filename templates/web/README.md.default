@@ -14,12 +14,6 @@ npm i -S <%= name %>
 
 ## Example
 
-```jsx
+```js
 import { <%= componentName %> } from '<%= name %>';
-
-function App() {
-  return <<%= componentName %> />;
-}
-
-render(<App />);
 ```
