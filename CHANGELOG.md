@@ -1,5 +1,10 @@
 # Changelog
 
+## 3.11.0 - 2025-08-23
+
+- feat(templates): add README templates
+- fix(templates): github actions permissions
+
 ## 3.10.1 - 2025-05-16
 
 - fix(github): action names
