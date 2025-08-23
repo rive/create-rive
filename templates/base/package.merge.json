@@ -21,7 +21,6 @@
     "@types/react-dom": "^18.2.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-doc-ui": "^2.0.0",
     "rive": "^3.0.0",
     "typescript": "^5.0.0"
   },
