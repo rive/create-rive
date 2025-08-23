@@ -1,5 +1,9 @@
 # Changelog
 
+## 3.12.0 - 2025-08-23
+
+- feat(templates/base): remove `react-doc-ui` dep
+
 ## 3.11.0 - 2025-08-23
 
 - feat(templates): add README templates
