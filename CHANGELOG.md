@@ -1,5 +1,9 @@
 # Changelog
 
+## 3.13.0 - 2026-04-19
+
+- feat(oxfmt): migrate prettier to oxfmt
+
 ## 3.12.0 - 2025-08-23
 
 - feat(templates/base): remove `react-doc-ui` dep
