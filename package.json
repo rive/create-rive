@@ -14,16 +14,13 @@
   "bugs": {
     "url": "https://github.com/guoyunhe/create-rive/issues"
   },
+  "license": "MIT",
+  "author": "Guo Yunhe",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/guoyunhe/create-rive.git"
   },
   "funding": "https://github.com/sponsors/guoyunhe",
-  "license": "MIT",
-  "author": "Guo Yunhe",
-  "type": "module",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
   "bin": "dist/create-rive.js",
   "files": [
     "CHANGELOG.md",
@@ -33,24 +30,23 @@
     "locales",
     "templates"
   ],
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
     "build": "rive build",
     "build:watch": "rive build --watch",
     "ci:eslint": "eslint -f json src -o ./.ci/eslint.json",
+    "format": "oxfmt .",
     "init": "tsx src/create-rive.ts",
     "lint": "eslint .",
-    "lint:fix": "prettier --write . && eslint --fix .",
+    "lint:fix": "eslint --fix .",
     "prepare": "husky",
     "start": "rive start",
     "test": "vitest run",
     "test:ui": "vitest --ui",
     "test:watch": "vitest"
   },
-  "lint-staged": {
-    "*.{cjs,cts,js,jsx,mjs,mts,ts,tsx,vue}": "eslint --fix",
-    "*.{cjs,css,cts,html,js,json,jsx,less,md,mjs,mts,scss,ts,tsx,vue,yaml,yml}": "prettier --write"
-  },
-  "prettier": "prettier-config-ali",
   "dependencies": {
     "@clack/prompts": "^0.10.1",
     "chalk": "^5.4.1",
@@ -64,10 +60,10 @@
     "i18n": "^0.15.1",
     "init-roll": "^1.4.0",
     "package-json-from-git": "^1.2.2",
-    "prettier-config-ali": "^1.3.4",
     "simple-git": "^3.27.0"
   },
   "devDependencies": {
+    "@guoyunhe/oxfmt-config": "^1.0.0",
     "@mdx-js/react": "^3.1.0",
     "@types/fs-extra": "^11.0.4",
     "@types/i18n": "^0.13.12",
@@ -75,18 +71,19 @@
     "@vitest/ui": "^3.1.2",
     "eslint": "^9.25.1",
     "eslint-config-ali": "^16.2.0",
-    "eslint-config-prettier": "^10.1.2",
-    "eslint-plugin-prettier": "^5.2.6",
     "husky": "^9.1.7",
     "lint-staged": "^15.5.1",
-    "prettier": "^3.5.3",
-    "prettier-config-ali": "^1.3.2",
+    "oxfmt": "^0.45.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "rive": "^3.1.2",
     "tsx": "^4.19.3",
     "typescript": "^5.8.3",
     "vitest": "^3.1.2"
+  },
+  "lint-staged": {
+    "*.{cjs,cts,js,jsx,mjs,mts,ts,tsx,vue}": "eslint --fix",
+    "*.{cjs,css,cts,html,js,json,jsx,less,md,mjs,mts,scss,ts,tsx,vue,yaml,yml}": "oxfmt"
   },
   "rive": {
     "template": "cli",

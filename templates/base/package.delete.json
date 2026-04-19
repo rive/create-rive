@@ -1,4 +1,5 @@
 {
+  "prettier": null,
   "devDependencies": {
     "@guoyunhe/react-lib-scripts": null,
     "@guoyunhe/node-scripts": null,
@@ -17,14 +18,15 @@
     "np": null,
     "pika-plugin-build-web-babel": null,
     "pika-plugin-ts-types": null,
+    "prettier": null,
+    "prettier-config-ali": null,
+    "eslint-config-prettier": null,
+    "eslint-plugin-prettier": null,
     "vite": null
   },
   "main": null,
   "module": null,
-  "scripts": {
-    "dev": null,
-    "watch": null
-  },
+  "scripts": { "dev": null, "watch": null },
   "types": null,
   "typings": null,
   "@pika/pack": null

@@ -1,17 +1,17 @@
+import { basename, dirname, join, resolve } from 'path';
+import { fileURLToPath } from 'url';
+
 import { camelCase, pascalCase } from 'change-case';
 import f2elint from 'f2elint';
 import f2etest from 'f2etest';
 import fs from 'fs-extra';
 import { init } from 'init-roll';
-import { basename, dirname, join, resolve } from 'path';
-import prettierConfig from 'prettier-config-ali';
-import { fileURLToPath } from 'url';
 
 export interface InitOptions {
   /**
    * Template to use.
    *
-   * @default "react"
+   * @default 'react'
    */
   template?: 'react' | 'preact' | 'node' | 'cli' | 'web' | 'base';
 }
@@ -23,9 +23,7 @@ export async function createRive(project: string | null, { template }: InitOptio
 
   let packageJson: any = {};
   try {
-    packageJson = await fs.readJSON(join(root, 'package.json'), {
-      throws: false,
-    });
+    packageJson = await fs.readJSON(join(root, 'package.json'), { throws: false });
   } catch {
     //
   }
@@ -38,7 +36,6 @@ export async function createRive(project: string | null, { template }: InitOptio
   await f2elint(root, {
     template: ['react', 'preact'].includes(_template) ? 'react' : 'base',
     stylelint: ['web', 'react', 'preact'].includes(_template),
-    prettier: true,
     lintStaged: isGitRoot,
     commitlint: isGitRoot,
     disableLog: true,
@@ -57,7 +54,6 @@ export async function createRive(project: string | null, { template }: InitOptio
     await init(join(__dirname, '../templates', tpl), root, params, {
       bumpDependencies: true,
       disableLog: true,
-      prettier: prettierConfig,
     });
   };
 

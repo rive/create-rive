@@ -10,6 +10,7 @@
   "stylelint.validate": ["css", "less", "scss"],
   "editor.defaultFormatter": "oxc.oxc-vscode",
   "editor.formatOnSave": true,
+  "editor.rulers": [100],
   "[javascript]": { "editor.defaultFormatter": "oxc.oxc-vscode" },
   "[javascriptreact]": { "editor.defaultFormatter": "oxc.oxc-vscode" },
   "[typescript]": { "editor.defaultFormatter": "oxc.oxc-vscode" },
@@ -20,6 +21,5 @@
   "[scss]": { "editor.defaultFormatter": "oxc.oxc-vscode" },
   "[html]": { "editor.defaultFormatter": "oxc.oxc-vscode" },
   "[json]": { "editor.defaultFormatter": "oxc.oxc-vscode" },
-  "[jsonc]": { "editor.defaultFormatter": "oxc.oxc-vscode" },
-  "editor.rulers": [100]
+  "[jsonc]": { "editor.defaultFormatter": "oxc.oxc-vscode" }
 }
