@@ -1,12 +1,14 @@
 #!/usr/bin/env node
 
+import { readFileSync } from 'fs';
+import { dirname, join, resolve } from 'path';
+import { fileURLToPath } from 'url';
+
 import { cancel, intro, isCancel, outro, select, text } from '@clack/prompts';
 import chalk from 'chalk';
 import { Command } from 'commander';
-import { readFileSync } from 'fs';
 import i18n from 'i18n';
-import { dirname, join, resolve } from 'path';
-import { fileURLToPath } from 'url';
+
 import { InitOptions, createRive } from '.';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
