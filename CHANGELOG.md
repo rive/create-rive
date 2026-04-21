@@ -1,5 +1,9 @@
 # Changelog
 
+## 3.14.0 - 2026-04-21
+
+- feat(tsconfig): migrate to `@guoyunhe/tsconfig`
+
 ## 3.13.0 - 2026-04-19
 
 - feat(oxfmt): migrate prettier to oxfmt
