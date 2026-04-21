@@ -1,6 +1,17 @@
 {
   "compilerOptions": {
     "outDir": null,
-    "declaration": null
+    "declaration": null,
+    "allowJs": null,
+    "checkJs": null,
+    "esModuleInterop": null,
+    "isolatedModules": null,
+    "module": null,
+    "moduleResolution": null,
+    "noEmit": null,
+    "resolveJsonModule": null,
+    "skipLibCheck": null,
+    "strict": null,
+    "target": null
   }
 }
