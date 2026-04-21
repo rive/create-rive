@@ -11,6 +11,8 @@
     "format": "oxfmt ."
   },
   "devDependencies": {
+    "@guoyunhe/oxfmt-config": "^1.0.0",
+    "@guoyunhe/tsconfig": "^1.1.0",
     "@mdx-js/react": "^3.0.0",
     "@types/node": "^22.0.0",
     "@types/react": "^18.2.0",
